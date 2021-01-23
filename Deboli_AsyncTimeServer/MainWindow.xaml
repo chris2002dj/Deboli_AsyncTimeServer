@@ -1,0 +1,61 @@
+﻿<Window x:Class="Deboli_AsyncTimeServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Deboli_AsyncTimeServer"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="Server" Height="300" Width="400">
+    <Grid>
+        
+        <!-- Stato server -->
+        <Label
+            x:Name="Lbl_StatoServer"
+            Content="Server Offline"
+            FontSize="30"
+            HorizontalAlignment="Left"
+            HorizontalContentAlignment="Center"
+            Margin="10,10,0,0"
+            VerticalAlignment="Top"
+            Width="374"
+            />
+        
+        <!-- Button connetti -->
+        <Button
+            x:Name="Btn_Connetti"
+            Content="Attiva Server"
+            HorizontalAlignment="Center"
+            Margin="0,0,0,40"
+            VerticalAlignment="Bottom"
+            Width="374"
+            Click="Btn_Connetti_Click"
+            />
+        
+        <!-- Button disconnetti -->
+        <Button
+            x:Name="Btn_Disconnetti"
+            Content="Disattiva Server"
+            HorizontalAlignment="Center"
+            Margin="0,0,0,10"
+            VerticalAlignment="Bottom"
+            Width="374"
+            Click="Btn_Disconnetti_Click"
+            IsEnabled="False"
+            />
+        
+        <!-- Client connessi -->
+        <TextBox
+            x:Name="Txt_ClientConnessi"
+            HorizontalAlignment="Center"
+            Height="135"
+            Margin="0,60,0,0"
+            TextWrapping="Wrap"
+            Text="Qui verrranno mostrari tutti i client connessi"
+            IsReadOnly="True"
+            VerticalAlignment="Top"
+            Width="374" 
+            />
+    </Grid>
+</Window>
