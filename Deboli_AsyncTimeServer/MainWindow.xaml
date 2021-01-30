@@ -44,18 +44,5 @@
             Click="Btn_Disconnetti_Click"
             IsEnabled="False"
             />
-        
-        <!-- Client connessi -->
-        <TextBox
-            x:Name="Txt_ClientConnessi"
-            HorizontalAlignment="Center"
-            Height="135"
-            Margin="0,60,0,0"
-            TextWrapping="Wrap"
-            Text="Qui verrranno mostrari tutti i client connessi"
-            IsReadOnly="True"
-            VerticalAlignment="Top"
-            Width="374" 
-            />
     </Grid>
 </Window>

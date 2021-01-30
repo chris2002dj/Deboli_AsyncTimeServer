@@ -31,9 +31,9 @@ namespace Deboli_AsyncTimeServer
 
         private void Btn_Connetti_Click(object sender, RoutedEventArgs e)
         {
-            Lbl_StatoServer.Content = "Server Online";
+            //Lbl_StatoServer.Content = "Server Online";
             Btn_Disconnetti.IsEnabled = true;
-            //Btn_Connetti.IsEnabled = false;
+            Btn_Connetti.IsEnabled = false;
 
             // Attivo e metto il server in ascolto
             myServer.ServerInAscolto();
@@ -41,9 +41,9 @@ namespace Deboli_AsyncTimeServer
 
         private void Btn_Disconnetti_Click(object sender, RoutedEventArgs e)
         {
-            Lbl_StatoServer.Content = "Server Offline";
+            //Lbl_StatoServer.Content = "Server Offline";
             //Btn_Disconnetti.IsEnabled = false;
-            //Btn_Connetti.IsEnabled = true;
+            Btn_Connetti.IsEnabled = true;
 
             // Disconnetto il server
             myServer.DisconnettiServer();

@@ -104,21 +104,14 @@ namespace Deboli_SocketAsyncLib
                     {
                         InviaMessaggio(DateTime.Now.ToShortTimeString(), client);
                     }
+                    else if (recvText.Contains("date"))
+                    {
+                        InviaMessaggio(DateTime.Now.ToShortDateString(), client);
+                    }
                     else
                     {
                         InviaMessaggio("Non ho capito", client);
                     }
-                    
-                    /*
-                    if (recvText.Contains("date"))
-                    {
-                        InviaMessaggio(DateTime.Now.ToLongDateString(), client);
-                    }
-                    
-                    if(recvText.Contains("time") == false)
-                    {
-                        
-                    }*/
 
                     //Debug.WriteLine($"Cleinte: {client.Client.RemoteEndPoint} |||| N byte: {nBytes}; Messaggio: {recvText}");
                 }
